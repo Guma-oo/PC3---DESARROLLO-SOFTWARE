@@ -135,7 +135,7 @@ class NotificacionInterna:
 class SistemaVozCiudadanaFacade:
     def __init__(self):
         # Conexión a Mongo
-        self.uri = "mongodb+srv://erickslonga24_db_user:ltg9xCcFwERsCsJL@todolistcluster.hrygcsc.mongodb.net/?appName=TodoListCluster"
+        self.uri = "mongodb+srv://erickslonga24_db_user:<TU_PASSWORD_AQUI>@todolistcluster.hrygcsc.mongodb.net/?appName=TodoListCluster"
         self.client = MongoClient(self.uri)
         self.db = self.client["voz_ciudadana_db"]
         self.collection = self.db["iniciativas"]
