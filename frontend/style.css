@@ -1,0 +1,201 @@
+
+:root {
+    --rojo-peru: #D91023;       
+    --rojo-oscuro: #9B0B18;     
+    --blanco-puro: #FFFFFF;
+    --fondo-gris: #F4F6F8;     
+    --texto-principal: #2C3E50; 
+    --borde-suave: #E0E5EC;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--fondo-gris);
+    color: var(--texto-principal);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--rojo-peru);
+    color: var(--blanco-puro);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border-bottom: 5px solid var(--rojo-oscuro);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header p {
+    margin: 0.5rem 0 0 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 850px;
+    margin: 2.5rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+
+.panel {
+    background: var(--blanco-puro);
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+    border: 1px solid var(--borde-suave);
+}
+
+.panel h2 {
+    color: var(--rojo-oscuro);
+    margin-top: 0;
+    border-bottom: 2px solid var(--fondo-gris);
+    padding-bottom: 10px;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--rojo-peru);
+    outline: none;
+    box-shadow: 0 0 5px rgba(217, 16, 35, 0.2);
+}
+
+
+button {
+    background-color: var(--rojo-peru);
+    color: var(--blanco-puro);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover { 
+    background-color: var(--rojo-oscuro); 
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.btn-refresh {
+    background-color: #4A5568;
+    margin-bottom: 1.5rem;
+}
+
+.btn-refresh:hover {
+    background-color: #2D3748;
+}
+
+.tarjeta-iniciativa {
+    border-left: 6px solid var(--rojo-peru);
+    background: #FAFAFA;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-top: 1px solid var(--borde-suave);
+    border-right: 1px solid var(--borde-suave);
+    border-bottom: 1px solid var(--borde-suave);
+}
+
+.tarjeta-iniciativa h3 {
+    margin-top: 0;
+    color: var(--rojo-oscuro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge {
+    background: var(--rojo-peru);
+    color: var(--blanco-puro);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+}
+
+.acciones { 
+    margin-top: 1.5rem; 
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 0.8rem; 
+    align-items: center;
+}
+
+.acciones input[type="text"] { width: calc(100% - 130px); margin: 0; }
+.acciones input[type="file"] { width: 100%; border: 1px dashed #ccc; padding: 0.5rem; background: var(--blanco-puro); }
+
+
+.doc-adjunto {
+    background: #FEE2E2;
+    border: 1px solid #FCA5A5;
+    color: var(--rojo-oscuro) !important;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    margin-right: 5px;
+    display: inline-block;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.doc-adjunto:hover {
+    background: #FECACA;
+}
+
+
+button[onclick^="firmar"], button[onclick^="comentar"] {
+    background-color: var(--texto-principal);
+}
+
+button[onclick^="firmar"]:hover, button[onclick^="comentar"]:hover {
+    background-color: #1A252F;
+}
+
+button[onclick^="adjuntar"] {
+    background-color: #E67E22; 
+    width: 100%;
+}
+
+button[onclick^="adjuntar"]:hover {
+    background-color: #D35400;
+}
+
+button[onclick^="enviar"] {
+    background-color: var(--rojo-oscuro); 
+    width: 100%;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+
+button[onclick^="enviar"]:hover {
+    background-color: #000000;
+}
