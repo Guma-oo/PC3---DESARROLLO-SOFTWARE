@@ -1,4 +1,4 @@
-# Voz del Ciudadano - Proyecto Universitario
+# Voz del Ciudadano - PC3
 **Autor:** Sánchez Longa Erick Joel
 
 *Nota:*  El límite de "25,000 firmas" ha sido ajustado a **5 firmas** mediante la variable `limite_firmas` en la configuración del Facade. Hice esto mas que todo para poder probar el programa.
